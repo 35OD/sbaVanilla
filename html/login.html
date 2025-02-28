@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cards of OOO</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <header>
+        <nav class="overlay">
+          <a href="home.html">
+            <img src="../assets/images/ladyLogo.png" alt="logo" width="70" height="70" />
+          </a>
+      
+          <div class="title">
+            <a href="home.html">
+              <h1>Cards of OOO</h1>
+            </a>
+          </div>
+          <button class="hamburger" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+      
+          <ul class="centered-nav" id="mobileMenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="/deckbuild">DeckBuilder</a></li>
+            <li class="dropdown">
+              <a href="#" id="helpMenuToggle">Help <span class="arrow">⬇</span></a>
+              <ul class="dropdown-menu" id="helpMenu">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/htp">How to Play</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+              </ul>
+            </li>
+            <li><a href="/profile">Profile</a></li>
+          </ul>
+      
+          <ul>
+            <li><a href="register.html" id="registerBtn">Register</a></li>
+            <li><a href="login.html" id="loginBtn">Login</a></li>
+          </ul>
+        </nav>
+      
+      </header>
+    <div class="login-container">
+        <div class="together">
+            <h2 class="centered" id="formTitle">Login</h2>
+        </div>
+
+        <div id="loginForm">
+            <div class="form-group">
+                <input type="text" placeholder="Username" required />
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" id="passwordInput" required />
+                <span class="show-password" id="togglePassword">Show Password</span>
+            </div>
+            <div class="form-group">
+                <div class="forgot-click">
+                    <span>Forgot Password?</span>
+                </div>
+            </div>
+            <div class="centered">
+                <button class="login-btn">Login</button>
+            </div>
+            <p class="switch-form">
+                Don't have an account?
+               <a href="register.html">Register Here</a>
+            </p>
+        </div>
+    </div>
+    <script src="../script/login.js"></script>
+</body>
+</html>
